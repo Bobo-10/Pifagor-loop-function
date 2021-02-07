@@ -5,17 +5,18 @@ namespace MyFirstRepo
     class Program
     {
         static void Main(string[] args)
+        //ПИФАГОР
         {
-            Console.WriteLine("Enter the height your triangle:");
-            int height = int.Parse(Console.ReadLine());
-            for (int i = 0; i < height; i++)
+            for (int i = 1; i <= 7; i++)
             {
-                for (int j = height; j > i; j--)
+                for (int j = 1; j <= 7; j++)
                 {
-                    Console.Write("*");
+                    int k = i * j;
+                    Console.Write("  " + k);
                 }
-                Console.WriteLine();
+                Console.WriteLine(" ");
             }
+            Console.ReadLine();
         }
     }
 }    
